@@ -20,7 +20,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 26px;
+    /* margin-top: 26px; */
+    height: 80px;
 }
 
 .nav_link {
@@ -122,15 +123,17 @@ body {
 
 .cats_video {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 80;
+    left: 0;
     content: '';
     width: 100%;
     height: 811px;
+    max-height: 811px;
     z-index: -2;
     object-fit: cover;
     margin: 0;
     padding: 0;
+
 }
 
 .logo_container {
@@ -215,8 +218,8 @@ body {
 
 .content_container {
     /* max-width: 80%; */
-    width: 1114px;
-    margin: 500px auto 0;
+    max-width: 1114px;
+    margin: 50px auto 0;
 }
 
 .title {
@@ -235,11 +238,315 @@ body {
 
 .meowverse_video {
     border-radius: 30px;
-    
+
 }
 
 .meowverse_video_container {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.tokenimilks {
+    display: flex;
+}
+
+.tokenimilks_left {
+    width: 55%;
+}
+
+.tokenimilks_left_text {
+    text-align: left;
+}
+
+*/ .milk_img {
+    flex-grow: 1;
+}
+
+.milk_box {
+    position: relative;
+    animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        left: 0px;
+        top: 20px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.story {
+    background-color: #16287B;
+    box-shadow: 0px 4px 35px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.story_title {
+    text-align: center;
+    padding-top: 18px;
+}
+
+.story_top {
+    display: flex;
+    margin: 30px 31px 0 34px;
+}
+
+.story_top_left {
+    width: 50%;
+    flex-grow: 1;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story_top_right {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.story_text {
+    font-size: 1.375em;
+    line-height: 150%;
+    color: #fff;
+}
+
+.story_middle {
+    margin: 30px 31px 0 34px;
+}
+
+.story_bot {
+    display: flex;
+    margin: 30px 31px 0 34px;
+    padding-bottom: 18px;
+}
+
+.story_video_4 {
+    margin-bottom: 30px;
+}
+
+
+.join_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.join_text {
+    margin-bottom: 29px;
+}
+
+.philosophy {
+    text-align: center;
+}
+
+.philosophy_title {
+    margin-bottom: 45px;
+}
+
+.philosophy_list {
+    list-style-image: url('./assets/pawprint.fill.svg');
+    padding: 0 0 0 85px;
+}
+
+.philosophy_list_item {
+    position: relative;
+    margin-bottom: 64px;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 1.375em;
+    line-height: 150%;
+    color: #fff;
+}
+
+.list_text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+
+.traits {
+    text-align: center;
+}
+
+.traits_title {
+    margin-bottom: 29px;
+}
+
+.traits_content {
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0px 4px 51px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.traits_img {
+    margin: 28px 0 17px;
+}
+
+.traits_text {
+    color: #000;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 150%;
+    text-align: center;
+    padding: 0 33px 23px 33px;
+}
+
+
+.roadmap_title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.roadmap_list {
+    list-style-image: url('./assets/pawprint-Aqua.svg');
+    padding: 0 0 0 85px;
+}
+
+.roadmap_list_item {
+    position: relative;
+    margin-bottom: 64px;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 1.375em;
+    line-height: 150%;
+    color: #26FBFF;
+}
+
+ul.roadmap_list>li:first-child {
+    color: #26FF49;
+    list-style-image: url('./assets/pawprint-Green.svg');
+}
+
+.roadmap_list :nth-child(2) {
+    color: #26FF49;
+    list-style-image: url('./assets/pawprint-Green.svg');
+}
+
+.why {
+    /* height: 1106px; */
+    position: relative;
+    /* background-image: url(./assets/why-bubbles.png) ;
+   
+    background-size: cover;
+    z-index: 10;
+    overflow: visible; */
+}
+
+.why_container {
+    
+}
+
+.why_bg {   
+    width: 100%;
+    max-height: 1106px;
+    min-height: 1106px;
+    position: absolute;
+    bottom: -270px;
+    left: 0;
+    z-index: -1;
+}
+
+.why_title {
+    /* color: #0E1A54; */
+    margin-top: 119px;
+    margin-bottom: 29px;
+    color: #fff;
+
+}
+
+.why_text {
+    font-size: 1.375em;
+    line-height: 150%;
+    /* color: #0E1A54; */
+    color: #fff;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-image: url(./assets/footer-bubbles.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.footer_logo {
+    width: 33%;
+}
+
+.footer_logo_img {
+    width: 225px;
+    height: 129px;
+    padding: 150px 0 90px 0px;
+}
+
+.footer_info {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_title {
+    padding-top: 92px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 150%;
+    color: #fff;
+}
+
+.footer_text {
+    font-size: 1.375em;
+    line-height: 150%;
+    text-align: center;
+    color: #FFF;
+}
+
+.footer_icons {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer_icon {
+    margin-left: 30px;
+}
+
+.footer_icons :first-child {
+    margin-left: 0;
+}
+
+.footer_empty {
+    width: 33%;
 }
