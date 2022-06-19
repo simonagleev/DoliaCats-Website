@@ -769,6 +769,15 @@ body {
     font-size: 1em;
     line-height: 150%;
     color: #26FBFF;
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: .4s;
+}
+
+.roadmap_list_item_active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: .4s;
 }
 
 ul.roadmap_list>li:first-child {
@@ -933,6 +942,3 @@ footer {
     margin-left: 0;
 }
 
-.footer_empty {
-    width: 33%;
-}
