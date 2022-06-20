@@ -35,6 +35,9 @@ body {
 .navigation_mobile {
     display: none;
 }
+.menu {
+    display: none;
+}
 
 .navigation {
     position: fixed;
