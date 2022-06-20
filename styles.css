@@ -73,7 +73,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    left: -26%;
+    left: -17%;
     z-index: 1;
     padding-top: 5px;
     transition: 1s;
@@ -84,6 +84,7 @@ body {
     display: block;
     background-color: #26FBFF;
     padding: 20px 10px;
+    margin-bottom: 5px;
     border-radius: 100px;
     text-align: center;
     font-size: 1em;
@@ -177,6 +178,15 @@ body {
     padding: 0;
 }
 
+.bubbles_bg {
+    position: absolute;
+    width: 100%;
+    top: calc(100vh - 100vw / 7);
+    z-index: -1;
+    content: '';
+    object-fit: cover;
+}
+
 .logo_container {
     position: relative;
     display: flex;
@@ -189,8 +199,6 @@ body {
 .logo {
     width: 40%;
     max-width: 536px;
-    /* max-height: 307px; */
-    /* padding-left: 52px; */
     padding-top: 50px;
     z-index: 11;
 }
@@ -440,6 +448,9 @@ body {
     width: 100%;
     margin-bottom: 184px;
     height: 70vh;
+    max-height: 865px;
+    max-width: 1680px;
+    margin: 0 auto;
 }
 
 .intro {
@@ -449,12 +460,11 @@ body {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    /* border: 2px solid yellow; */
-    /* margin-top: 50vh; */
 }
 
 .intro_text_container {
     width: 50%;
+    padding-top: 4%;
 }
 
 .intro_text {
@@ -471,34 +481,21 @@ body {
     text-align: end;
 }
 
-.gif_filler {}
-
 .cat_cards_container {
     position: absolute;
-    bottom: -20px;
+    bottom: -58px;
     right: 10%;
 }
 
 .cat_cards {
     border-radius: 30px;
     width: 100%;
-    max-width: 350px;
-    max-height: 350px;
-    /* flex-grow: 1; */
-}
-
-.bubbles_bg {
-    position: absolute;
-    width: 100%;
-    top: calc(100vh - 100vw / 4);
-    z-index: -1;
-    content: '';
-    object-fit: cover;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 
 .content_container {
-    /* max-width: 80%; */
     max-width: 1114px;
     margin: 0 auto;
 }
@@ -518,9 +515,12 @@ body {
     margin: 29px 0;
 }
 
+.meowerse_section {
+    margin-top: 200px;
+}
+
 .meowverse_video {
     border-radius: 30px;
-
 }
 
 .meowverse_video_container {
@@ -620,6 +620,7 @@ body {
 
 .story_video_4 {
     margin-bottom: 30px;
+
 }
 
 
@@ -644,27 +645,28 @@ body {
 }
 
 .philosophy_list {
-    list-style-image: url('./assets/pawprint.fill.svg');
-    padding: 0 0 0 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .philosophy_list_item {
-    position: relative;
-    margin-bottom: 64px;
-    text-align: left;
-    padding-left: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
     font-size: 1.375em;
     line-height: 150%;
     color: #fff;
+    text-align: left;
 }
 
-.list_text {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%)
+.philosophy_icon_img {
+    max-width: 69px;
+    margin-right: 30px;
 }
-
 
 .traits {
     text-align: center;
@@ -709,34 +711,38 @@ body {
 }
 
 .roadmap_list {
-    list-style-image: url('./assets/pawprint-Aqua.svg');
-    padding: 0 0 0 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 85px;
 }
 
 .roadmap_list_item {
-    position: relative;
-    margin-bottom: 64px;
-    text-align: left;
-    padding-left: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
     font-size: 1.375em;
-    line-height: 150%;
-    color: #26FBFF;
+    opacity: 0;
+    transition: 1s;
 }
 
-ul.roadmap_list>li:first-child {
-    color: #26FF49;
-    list-style-image: url('./assets/pawprint-Green.svg');
+.roadmap_list_item_active {
+    opacity: 1;
+    transition: 1s;
 }
 
-.roadmap_list :nth-child(2) {
-    color: #26FF49;
-    list-style-image: url('./assets/pawprint-Green.svg');
+.rodamap_icon_img {
+    max-width: 69px;
+    margin-right: 30px;
 }
 
 .ellipse_right_half {
     position: absolute;
     right: 0;
-    top: 15%
+    top: 0
 }
 
 .ellipse_left_half {
@@ -764,18 +770,12 @@ ul.roadmap_list>li:first-child {
     background-color: #26FBFF;
     position: absolute;
     right: 20%;
-    top: 43.5%;
+    top: 45.5%;
     z-index: -100;
 }
 
 .why {
-    /* height: 1106px; */
     position: relative;
-    /* background-image: url(./assets/why-bubbles.png) ;
-   
-    background-size: cover;
-    z-index: 10;
-    overflow: visible; */
 }
 
 .why_container {}
@@ -791,18 +791,15 @@ ul.roadmap_list>li:first-child {
 }
 
 .why_title {
-    /* color: #0E1A54; */
+    color: #0E1A54;
     margin-top: 119px;
     margin-bottom: 29px;
-    color: #fff;
-
 }
 
 .why_text {
     font-size: 1.375em;
     line-height: 150%;
-    /* color: #0E1A54; */
-    color: #fff;
+    color: #0E1A54;
     text-align: left;
     margin-top: 20px;
 }
@@ -882,4 +879,9 @@ footer {
 
 .footer_empty {
     width: 33%;
+}
+
+.show {
+    opacity: 1;
+    transition: 1s;
 }
