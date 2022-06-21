@@ -35,6 +35,7 @@ body {
 .navigation_mobile {
     display: none;
 }
+
 .menu {
     display: none;
 }
@@ -233,9 +234,18 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-
-    
 }
+
+.join_wl_link {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn_text:hover {
     text-shadow: #16287B 2px 0px 10px;
 }
@@ -319,7 +329,7 @@ body {
 
 @keyframes btn_img_animation {
     50% {
-       transform: scale(.9);
+        transform: scale(.9);
     }
 
     100% {
@@ -419,7 +429,7 @@ body {
 .btn_join:hover .btn_ellipse_3,
 .btn_join:hover .btn_ellipse_4,
 .btn_join:hover .btn_ellipse_5,
-.btn_join:hover .btn_ellipse_6{
+.btn_join:hover .btn_ellipse_6 {
     animation-duration: 5s;
 }
 

@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="./styles.css" media="screen and (min-width: 1025px)">
     <link rel="stylesheet" href="./stylesBurgerMenu.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="./stylesBurgerMenu.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
     <link rel="stylesheet" href="./stylesMobile.css" media="screen and (max-width: 480px)">
-
     <link rel="stylesheet" href="./stylesTablets.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,44 +67,47 @@
                 </ul>
             </div> 
          </nav> -->
-        <nav class="menu">
-            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-            <label class="menu-open-button" for="menu-open">
-                <span class="hamburger hamburger-1"></span>
-                <span class="hamburger hamburger-2"></span>
-                <span class="hamburger hamburger-3"></span>
-            </label>
-
-            <a href="#intro" class="menu-item">
-                <p class="goo_menu_text">About</p>
-            </a>
-            <a href="#meowverse" class="menu-item">
-                <p class="goo_menu_text">Meowverse</p>
-            </a>
-            <div href="#more" class="menu-item">
-                <p class="goo_menu_text">More</p>
-                <input type="checkbox" href="#" class="menu-open-2" name="menu-open-2" id="menu-open-2" />
-                <label class="menu-open-button-2" for="menu-open-2">
-
+        <div id="menu-background" class="le">
+            <nav class="menu">
+                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                <label class="menu-open-button" for="menu-open">
+                    <span class="hamburger hamburger-1"></span>
+                    <span class="hamburger hamburger-2"></span>
+                    <span class="hamburger hamburger-3"></span>
                 </label>
-                <a href="#" class="menu-item-lvl2">
-                    <p class="goo_menu_text">Meowrush</p>
-                </a>
-                <a href="#" class="menu-item-lvl2">
-                    <p class="goo_menu_text">Art</p>
-                </a>
-                <a href="#" class="menu-item-lvl2">
-                    <p class="goo_menu_text">Trophies</p>
-                </a>
-            </div>
-            <a href="#roadmap" class="menu-item">
-                <p class="goo_menu_text">Roadmap</p>
-            </a>
-            <a href="#philosophy" class="menu-item">
-                <p class="goo_menu_text">Philosophy</p>
-            </a>
 
-        </nav>
+                <a href="#intro" class="menu-item">
+                    <p class="goo_menu_text">About</p>
+                </a>
+                <a href="#meowverse" class="menu-item">
+                    <p class="goo_menu_text">Meowverse</p>
+                </a>
+                <div href="#more" class="menu-item-more" id="more">
+                    <p class="goo_menu_text">More ▼</p>
+                    <input type="checkbox" href="#" class="menu-open-2" name="menu-open-2" id="menu-open-2" />
+                    <label class="menu-open-button-2" for="menu-open-2">
+
+                    </label>
+                    <a href="#" class="menu-item-lvl2">
+                        <p class="goo_menu_text">Meowrush</p>
+                    </a>
+                    <a href="#" class="menu-item-lvl2">
+                        <p class="goo_menu_text">Art</p>
+                    </a>
+                    <a href="#" class="menu-item-lvl2">
+                        <p class="goo_menu_text">Trophies</p>
+                    </a>
+                </div>
+                <a href="#roadmap" class="menu-item">
+                    <p class="goo_menu_text">Roadmap</p>
+                </a>
+                <a href="#philosophy" class="menu-item">
+                    <p class="goo_menu_text">Philosophy</p>
+                </a>
+
+            </nav>
+        </div>
+
 
 
         <!-- filters -->
@@ -148,14 +151,18 @@
                         <img src="./assets/logo.svg" width="100%" alt="DoliaCats">
                     </div>
                     <div class="btn_join">
-                        <div class="btn_ellipse_1 btn_bubbles"></div>
-                        <div class="btn_ellipse_2"></div>
-                        <div class="btn_ellipse_3"></div>
-                        <div class="btn_ellipse_4"></div>
-                        <div class="btn_ellipse_5"></div>
-                        <div class="btn_ellipse_6"></div>
-                        <p class="btn_text">JOIN WL</p>
-                        <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Join WL">
+                        <a class="join_wl_link" href="https://discord.com/invite/RetekYNarD">
+
+                            <div class="btn_ellipse_1 btn_bubbles"></div>
+                            <div class="btn_ellipse_2"></div>
+                            <div class="btn_ellipse_3"></div>
+                            <div class="btn_ellipse_4"></div>
+                            <div class="btn_ellipse_5"></div>
+                            <div class="btn_ellipse_6"></div>
+                            <p class="btn_text">JOIN WL</p>
+                            <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Join WL">
+
+                        </a>
                     </div>
                 </div>
             </section>
@@ -306,16 +313,18 @@
                 Be one of the first to adopt a Dolia Cat NFT and get access to the Meowverse, packed with fluffy
                 play2earn games and the best family like community the cat world has ever known!
             </p>
-            <div class="btn_join">
-                <div class="btn_ellipse_1 btn_bubbles"></div>
-                <div class="btn_ellipse_2"></div>
-                <div class="btn_ellipse_3"></div>
-                <div class="btn_ellipse_4"></div>
-                <div class="btn_ellipse_5"></div>
-                <div class="btn_ellipse_6"></div>
-                <p class="btn_text">JOIN WL</p>
-                <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Join WL">
-            </div>
+            <a class="join_wl_link" href="https://discord.com/invite/RetekYNarD">
+                <div class="btn_join">
+                    <div class="btn_ellipse_1 btn_bubbles"></div>
+                    <div class="btn_ellipse_2"></div>
+                    <div class="btn_ellipse_3"></div>
+                    <div class="btn_ellipse_4"></div>
+                    <div class="btn_ellipse_5"></div>
+                    <div class="btn_ellipse_6"></div>
+                    <p class="btn_text">JOIN WL</p>
+                    <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Join WL">
+                </div>
+            </a>
         </div>
 
         <section class="philosophy content_container">
@@ -479,12 +488,12 @@
                 <p class="footer_text">Terms and conditions</p>
                 <p class="footer_text">Privacy Policy</p>
                 <div class="footer_icons">
-                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/discord-white.svg"
-                            alt="discord"></a>
-                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/twitter-white.svg"
-                            alt="twitter"></a>
-                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/instagram-white.svg"
-                            alt="instagram"></a>
+                    <a class="footer_icon" href="https://discord.com/invite/RetekYNarD"><img class="footer_icon_img"
+                            src="./assets/discord-white.svg" alt="discord"></a>
+                    <a class="footer_icon" href="https://twitter.com/DoliaCats?t=nmKAxmNfOQnLpkP7uTI2Xg&s=09"><img
+                            class="footer_icon_img" src="./assets/twitter-white.svg" alt="twitter"></a>
+                    <a class="footer_icon" href="https://instagram.com/doliacats?utm_medium=copy_link"><img
+                            class="footer_icon_img" src="./assets/instagram-white.svg" alt="instagram"></a>
                 </div>
             </div>
             <div class="footer_empty">
@@ -496,18 +505,18 @@
 
     <div class="social_btns_group">
         <div>
-            <a href="">
+            <a href="https://discord.com/invite/RetekYNarD">
                 <img class="social_icon" src="./assets/discord.svg" alt="Discord">
             </a>
         </div>
         <div>
-            <a href="">
+            <a href="https://twitter.com/DoliaCats?t=nmKAxmNfOQnLpkP7uTI2Xg&s=09">
                 <img class="social_icon" src="./assets/twitter.svg" alt="Twitter">
             </a>
         </div>
 
         <div>
-            <a href="">
+            <a href="https://instagram.com/doliacats?utm_medium=copy_link">
                 <img style="height: 50px !important; width: 50px !important; padding: 0px !important"
                     class="social_icon" src="./assets/instagram.svg" alt="instagram">
             </a>
