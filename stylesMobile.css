@@ -21,7 +21,7 @@ body {
 
 /* HEADER */
   
-  #burger-menu {
+  /* #burger-menu {
     cursor: pointer;
     height: 27px;
     width: 27px;
@@ -111,7 +111,7 @@ body {
   }
 
 /*  */
-#menu__toggle {
+/* #menu__toggle {
     opacity: 0;
 }
 
@@ -165,10 +165,10 @@ body {
     background-color: #0E1A54;
     z-index: 11;
     transition: 1s;
-}
+} */
 
 /* элементы меню */
-.menu__item {
+/* .menu__item {
     display: block;
     padding: 12px 24px;
     margin: 20px 0;
@@ -204,7 +204,7 @@ body {
     top: 0;
     right: 0;
     transition: .5s;
-}
+} */ */
 
 
 .navigation {

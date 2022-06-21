@@ -19,7 +19,6 @@ for (let el of roadmapAnimItems) {
     console.log(el)
 }
 
-
 function onEntry(entry) {
     entry.forEach(change => {
         if(change.isIntersecting) {
@@ -34,26 +33,27 @@ for (let el of meowverseVideos) {
 }
 
 
-const menuCheckbox = document.getElementById("menu__toggle");
+// const menuCheckbox = document.getElementById("menu__toggle");
 
-const link= document.querySelectorAll('.menu__item')
-const menu= document.querySelector('.menu__box')
-const headerBurger = document.querySelector('.header__burger');
-const headerMenu = document.querySelector('.header__menu');
-const body = document.querySelector('.body');
+// const link= document.querySelectorAll('.menu__item')
+// const menu= document.querySelector('.menu__box')
+// const headerBurger = document.querySelector('.header__burger');
+// const headerMenu = document.querySelector('.header__menu');
+// const body = document.querySelector('.body');
 
-const navLinks = document.querySelectorAll('.menu__item');
+// const navLinks = document.querySelectorAll('.menu__item');
 
-const test = () => {
-    // menuCheckbox.value = 'off'
-  console.log('heheh')
-}
-menu.addEventListener('click', function(){
-    console.log('heheh')
-    menuCheckbox.value = 'off'
-    console.log(menuCheckbox.labels)
-})
-console.log(menu)
+// const test = () => {
+//     // menuCheckbox.value = 'off'
+//   console.log('heheh')
+// }
+// menu.addEventListener('click', function(){
+//     console.log('heheh')
+//     menuCheckbox.value = 'off'
+//     console.log(menuCheckbox.labels)
+// })
+// console.log(menu)
+
 // link.addEventListener('click', test())
 
 // function doActiveMenu(evt) {
@@ -73,11 +73,18 @@ console.log(menu)
 
 
 
-var burgerMenu = document.getElementById('burger-menu');
-
-var overlay = document.getElementById('menu');
+const burgerMenu = document.getElementById('burger-menu');
+const link = document.getElementById('test')
+const overlay = document.getElementById('menu');
 
 burgerMenu.addEventListener('click', function() {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
+  console.log("it's happening")
 });
+
+link.addEventListener('click', function() {
+    burgerMenu.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+    console.log("it's happening2")
+})

@@ -9,13 +9,14 @@
 
     <link rel="stylesheet" href="./styles.css" media="screen and (min-width: 1025px)">
     <link rel="stylesheet" href="./stylesMobile.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="./stylesNormalMenu.css" media="screen and (max-width: 480px)">
     <link rel="stylesheet" href="./stylesTablets.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-  
+
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="navigation_mobile">
+        <!-- <nav class="navigation_mobile">
             <input class="menu__toggle" id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
@@ -55,14 +56,29 @@
                     </div>
                 </div>
             </div> 
-        
-            <!-- <div id="menu">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                </ul>
-            </div> -->
-        </nav>
+        </nav> -->
+
+        <div id="burger-menu">
+            <span></span>
+          </div>
+          
+          <div id="menu">
+            <div id="test">
+                <div class="menu__item__container"><a class="menu__item" href="#intro">About</a></div>
+                <div class="menu__item__container"><a class="menu__item" href="#meowverse">Meowverse</a></div>
+                <div class="menu__item__container"><a class="menu__item" href="#philosophy">Philosophy</a></div>
+                <div class="menu__item__container"><a class="menu__item" href="#roadmap">Roadmap</a></div>
+                <div class="menu__item__container"><a class="menu__item" href="#">FAQs</a></div>
+                <div class="menu__item__container" class="menu__item">
+                    <a class="menu__item" href="#">More</a>
+                    <!-- <div class="dropdown-content">
+                        <a href="#">Meowrush</a>
+                        <a href="#">Trophies</a>
+                        <a href="#">Art</a>
+                    </div> -->
+                </div>
+            </div> 
+          </div>
     </header>
     <main>
         <section class="top_block">
@@ -255,27 +271,33 @@
             </h1>
             <div class="philosophy_list">
                 <div class="philosophy_list_item">
-                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg" alt="paw print"></div>
+                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+                            alt="paw print"></div>
                     <p class="list_text"> We live an easy life, nothing matters except family and the community</p>
                 </div>
                 <div class="philosophy_list_item">
-                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg" alt="paw print"></div>
+                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+                            alt="paw print"></div>
                     <p class="list_text">Food and MEELK is our everything</p>
                 </div>
                 <div class="philosophy_list_item">
-                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg" alt="paw print"></div>
+                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+                            alt="paw print"></div>
                     <p class="list_text">Our main job is to play and earn because our whole life is a game</p>
                 </div>
                 <div class="philosophy_list_item">
-                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg" alt="paw print"></div>
+                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+                            alt="paw print"></div>
                     <p class="list_text">We only do what brings us joy and pleasure</p>
                 </div>
                 <div class="philosophy_list_item">
-                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg" alt="paw print"></div>
+                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+                            alt="paw print"></div>
                     <p class="list_text">No negativity. Only quick fights</p>
                 </div>
                 <div class="philosophy_list_item">
-                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg" alt="paw print"></div>
+                    <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+                            alt="paw print"></div>
                     <p class="list_text">Everyone loves you, and each trait of yours is there for a reason! You can
                         stroke, but keep your distance!</p>
                 </div>
@@ -307,49 +329,59 @@
                 </h1>
                 <div class="roadmap_list">
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Green.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Green.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Development stage and handcrafting of Dolia Cats traits</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Green.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Green.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Marketing initiative launch</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Public release</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Sales launch: The first 1000 adopted NFT kitties will receive
                             a FREE 3D Dolia Cats model NFT</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Mega money giveaway for discord community and launch of an exclusive Dolia
                             Cats
                             Merch.
                             Hats, hoodies and t-shirts so you could take Dolia Cats to the real world!</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">DAO among the holders. We are going to make your ideas real in the
                             Meowverse!
                         </p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Creating and launch an Animated series about Dolia Cats</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Meowverse Beta</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Integration of Tokenomilks</p>
                     </div>
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg" alt="pawprint"></div>
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+                                alt="pawprint"></div>
                         <p class="list_text">Play To Earn Meoverse NFT Metaverse launch</p>
                     </div>
                 </div>
@@ -393,9 +425,12 @@
                 <p class="footer_text">Terms and conditions</p>
                 <p class="footer_text">Privacy Policy</p>
                 <div class="footer_icons">
-                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/discord-white.svg" alt="discord"></a>
-                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/twitter-white.svg" alt="twitter"></a>
-                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/instagram-white.svg" alt="instagram"></a>
+                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/discord-white.svg"
+                            alt="discord"></a>
+                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/twitter-white.svg"
+                            alt="twitter"></a>
+                    <a class="footer_icon" href="#"><img class="footer_icon_img" src="./assets/instagram-white.svg"
+                            alt="instagram"></a>
                 </div>
             </div>
             <div class="footer_empty">
