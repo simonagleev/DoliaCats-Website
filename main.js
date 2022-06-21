@@ -19,7 +19,6 @@ for (let el of roadmapAnimItems) {
     console.log(el)
 }
 
-
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
@@ -54,6 +53,7 @@ for (let el of meowverseVideos) {
 //     console.log(menuCheckbox.labels)
 // })
 // console.log(menu)
+
 // link.addEventListener('click', test())
 
 // function doActiveMenu(evt) {
@@ -70,6 +70,7 @@ for (let el of meowverseVideos) {
 
 
 // headerBurger.addEventListener('click', doActiveMenu);
+
 
 
 
@@ -129,3 +130,4 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+

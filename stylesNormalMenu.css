@@ -1,0 +1,138 @@
+#burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    overflow: visible;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: #26FBFF;
+    display: block;
+    height: 3px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.1s ease-in-out;
+    z-index: 999;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+    transition: .5s;
+}
+
+#burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+    transition: .5s;
+}
+
+#burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+    transition: .5s;
+
+}
+
+#burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+    transition: .5s;
+
+}
+
+#burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    transition: .5s;
+
+}
+
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    transition: .5s;
+
+}
+
+#burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
+#menu {
+    z-index: 100;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 1s ease-in-out;
+}
+
+#menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#menu ul {
+    padding: 0;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.menu__item__container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    display: block;
+    padding: 15px 24px;
+    margin: 20px 0;
+    box-shadow: #26FBFF 2px 0px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #26FBFF;
+    color: #0E1A54;
+    line-height: 28px;
+    font-size: 1.5em;
+    font-weight: 800;
+    transition: 1s;
+    min-width: 250px;
+}
+
+.navigation {
+    display: none;
+}
