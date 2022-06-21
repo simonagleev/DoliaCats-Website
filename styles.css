@@ -521,6 +521,12 @@ body {
     margin-top: 100px;
 }
 
+@media screen and (min-width: 1560px ) {
+    .title_big {
+        margin-top: 300px;
+    }
+}
+
 .content_text {
     line-height: 150%;
     font-size: 1.375em;

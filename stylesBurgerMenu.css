@@ -13,6 +13,7 @@
 }
 
 .menu {
+  -webkit-filter: url("#shadowed-goo");
   filter: url("#shadowed-goo");
   z-index: 100;
   position: fixed;
