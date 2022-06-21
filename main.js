@@ -3,13 +3,13 @@ let meowverseVideos = document.querySelectorAll(".meowverse_video");
 
 function onEntry(entry) {
     entry.forEach(change => {
-        if(change.isIntersecting) {
+        if (change.isIntersecting) {
             change.target.classList.add('roadmap_list_item_active')
         }
     });
 }
 
-const options= {
+const options = {
     threshhold: [0.5]
 }
 const observer = new IntersectionObserver(onEntry, options);
@@ -21,7 +21,7 @@ for (let el of roadmapAnimItems) {
 
 function onEntry(entry) {
     entry.forEach(change => {
-        if(change.isIntersecting) {
+        if (change.isIntersecting) {
             change.target.classList.add('show')
         }
     });
@@ -73,18 +73,61 @@ for (let el of meowverseVideos) {
 
 
 
-const burgerMenu = document.getElementById('burger-menu');
-const link = document.getElementById('test')
-const overlay = document.getElementById('menu');
 
-burgerMenu.addEventListener('click', function() {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-  console.log("it's happening")
-});
+// var burgerMenu = document.getElementById('burger-menu');
 
-link.addEventListener('click', function() {
-    burgerMenu.classList.toggle("close");
-    overlay.classList.toggle("overlay");
-    console.log("it's happening2")
+// var overlay = document.getElementById('menu');
+
+// burgerMenu.addEventListener('click', function() {
+//   this.classList.toggle("close");
+//   overlay.classList.toggle("overlay");
+// });
+
+const wholeNavigation = document.querySelector('.menu')
+const bg = document.getElementById('menu-background');
+
+const menu = document.querySelector('.menu-open')
+const label = document.querySelector('.menu-open-button')
+const checkbox = document.getElementById('menu-open')
+const menuItems = document.querySelectorAll('.menu-item')
+
+const more = document.getElementById('more')
+const menu2 = document.querySelector('.menu-open-2')
+const label2 = document.querySelector('.menu-open-button-2')
+const checkbox2 = document.getElementById('menu-open-2')
+
+menu.addEventListener('click', function () {
+    if (checkbox.checked === true) {
+        bg.classList.toggle('menu_bg')
+    }
+    checkbox2.checked = false
 })
+
+label.addEventListener('click', function () {
+    if (checkbox.checked === true) {
+        bg.classList.toggle('menu_bg')
+    }
+    checkbox2.checked = false
+})
+
+menuItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+        if (checkbox.checked === true) {
+            bg.classList.toggle('menu_bg')
+        }
+        checkbox2.checked = false
+        checkbox.checked = false
+    })
+})
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    wholeNavigation.style.top = "0";
+  } else {
+    wholeNavigation.style.top = "-500px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
