@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(onEntry, options);
 
 for (let el of roadmapAnimItems) {
     observer.observe(el)
-    console.log(el)
+
 }
 
 function onEntry(entry) {
@@ -29,7 +29,7 @@ function onEntry(entry) {
 
 for (let el of meowverseVideos) {
     observer.observe(el)
-    console.log(el)
+
 }
 
 // Closing menu
@@ -84,23 +84,26 @@ menuItems2.forEach(function (item) {
 
 //Hiding menu while scrolling
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    wholeNavigation.style.top = "0";
-  } else {
-    wholeNavigation.style.top = "-500px";
-  }
-  prevScrollpos = currentScrollPos;
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        wholeNavigation.style.top = "0";
+    } else {
+        if (currentScrollPos > 600) {
+            wholeNavigation.style.top = "-500px";
+        }
+
+    }
+    prevScrollpos = currentScrollPos;
 }
+
 
 // Preloader 
 
 window.onload = function () {
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
     }, 500);
-    console.log('preload')
-  }
+}

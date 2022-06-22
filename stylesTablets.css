@@ -169,8 +169,15 @@ body {
     top: 5%;
     left: 0;
     width: 70%;
-    max-width: 366px;
+    max-width: 536px;
+    display: none;
+}
 
+.logo_iphone {
+    padding-top: 20px;
+    left: 0;
+    width: 70%;
+    max-width: 536px;
 }
 
 .btn_join {
@@ -853,6 +860,12 @@ footer {
 }
 
 .footer_logo_img {
+    width: 30%;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.footer_logo_img_iphone {
     width: 30%;
     padding-bottom: 5px;
 }

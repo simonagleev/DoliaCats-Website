@@ -9,6 +9,16 @@
     <meta itemprop="description" content="Dolia cats NFT collectin and metaverse" />
     <meta itemprop="image" content="./assets/metaImage.png">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dolia Cats">
+    <meta property="og:description" content="Cats. NFT. Metaverse.">
+    <meta property="og:url" content="https://doliacats.com/">
+    <meta property="og:image" content="./assets/metaImage.png">
+    <meta property="og:site_name" content="Dolia Cats">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:video" content="./assets/1st_block/1.webm">
+
     <title>Dolia Cats</title>
 
     <link rel="shortcut icon" href="./assets/Artboard 1.png" type="image/x-icon">
@@ -17,7 +27,7 @@
     <link rel="stylesheet" href="./stylesBurgerMenu.css" media="screen and (max-width: 480px)">
     <link rel="stylesheet" href="./stylesBurgerMenu.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
     <link rel="stylesheet" href="./stylesMobile.css" media="screen and (max-width: 480px)">
-    <link rel="stylesheet" href="./stylesNormalMenu.css" media="screen and (max-width: 480px)">
+    <!-- <link rel="stylesheet" href="./stylesNormalMenu.css" media="screen and (max-width: 480px)"> -->
     <link rel="stylesheet" href="./stylesTablets.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
 
 
@@ -41,49 +51,18 @@
             <div class="nav_item swing"><a class="nav_link" href="#meowverse">Meowverse</a></div>
             <div class="nav_item swing"><a class="nav_link" href="#philosophy">Philosophy</a></div>
             <div class="nav_item swing"><a class="nav_link" href="#roadmap">Roadmap</a></div>
-            <div class="nav_item swing"><a class="nav_link" href="#">FAQs</a></div>
+            <div class="nav_item swing"><a class="nav_link" href="./pages/faq/faq.html">FAQs</a></div>
             <div class="nav_item swing">
                 <a class="nav_link" href="#">More</a>
                 <div class="dropdown-content">
                     <a href="https://meowrush.com">Meowrush</a>
                     <a href="https://opensea.io/collection/doliacatstrophies">Trophies</a>
-                    <a href="./pages/art.html">Art</a>
+                    <a href="http://art.doliacats.com">Art</a>
                 </div>
             </div>
 
         </nav>
 
-        <!-- 
-        <nav class="navigation_mobile">
-
-            <input class="menu__toggle" id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <div class="menu__box">
-                <div><a class="menu__item" href="#intro">About</a></div>
-                <div><a class="menu__item" href="#">Meowverse</a></div>
-                <div><a class="menu__item" href="#">Philosophy</a></div>
-                <div><a class="menu__item" href="#roadmap">Roadmap</a></div>
-                <div><a class="menu__item" href="#">FAQs</a></div>
-                <div class="menu__item">
-                    <a class="nav_link" href="#">More</a>
-                    <div class="dropdown-content">
-                        <a href="#">Meowrush</a>
-                        <a href="#">Trophies</a>
-                        <a href="#">Art</a>
-                    </div>
-                </div>
-            </div> 
-
-        
-             <div id="menu">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                </ul>
-            </div> 
-         </nav> -->
         <div id="menu-background" class="le">
             <nav class="menu">
                 <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
@@ -108,11 +87,14 @@
                     <a href="https://meowrush.com" class="menu-item-lvl2">
                         <p class="goo_menu_text">Meowrush</p>
                     </a>
-                    <a href="./pages/art.html" class="menu-item-lvl2">
+                    <a href="http://art.doliacats.com" class="menu-item-lvl2">
                         <p class="goo_menu_text">Art</p>
                     </a>
                     <a href="https://opensea.io/collection/doliacatstrophies" class="menu-item-lvl2">
                         <p class="goo_menu_text">Trophies</p>
+                    </a>
+                    <a href="./pages/faq/faq.html" class="menu-item-lvl2">
+                        <p class="goo_menu_text">FAQs</p>
                     </a>
                 </div>
                 <a href="#roadmap" class="menu-item">
@@ -129,7 +111,7 @@
 
         <!-- filters -->
         <div style="display: none">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%">
                 <defs>
                     <filter id="shadowed-goo">
 
@@ -157,7 +139,7 @@
     <main>
         <section class="top_block">
             <section class="cats_video_container">
-                <video class="cats_video" width="100%" preload="metadata" autoplay muted loop playsinline>
+                <video class="cats_video lazy" width="100%" preload="metadata" poster="./assets/metaImage.png" autoplay muted loop playsinline>
                     <source src="./assets/1st_block/1.webm" type="video/webm" />
                     <source src="./assets/1st_block/1st_block.mp4" type="video/mp4" />
                 </video>
@@ -166,6 +148,9 @@
                 <div class="logo_container">
                     <div class="logo">
                         <img src="./assets/logo.svg" width="100%" alt="DoliaCats">
+                    </div>
+                    <div class="logo_iphone">
+                        <img src="./assets/logo-iphone.png" width="100%" alt="DoliaCats">
                     </div>
                     <div class="btn_join">
                         <a class="join_wl_link" href="https://discord.com/invite/RetekYNarD">
@@ -229,7 +214,7 @@
                 Here, you can let your imagination run wild, anything is possible.
             </p>
             <div class="meowverse_video_container">
-                <video class="meowverse_video" width="80%" preload="metadata" autoplay muted loop playsinline>
+                <video class="meowverse_video lazy" width="80%" preload="metadata" autoplay muted loop playsinline>
                     <source src="./assets/Meowverse/meowverse.webm" type="video/webm" />
                     <source src="./assets/Meowverse/meowverse.mp4" type="video/mp4" />
                 </video>
@@ -250,7 +235,7 @@
         <section class="tokenimilks content_container">
             <div class="tokenimilks_left">
                 <h1 class="title">
-                    Tokenimilks
+                    Tokenomilks
                 </h1>
                 <p class="content_text tokenimilks_left_text">
                     Your Dolia Cat NFTs grant you an exclusive early access to the Meowverse, a place governed by its
@@ -278,13 +263,13 @@
                         culture, and there’s no sign of this slowing down. So, now we know that the whole world loves
                         cats, it’s time to introduce you to the Dolia Cats!
                     </p>
-                    <video class="story_video_1" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/1/story1.webm" type="video/webm" />
-                        <source src="./assets/Story/1/story1.mp4" type="video/mp4" />
+                    <video class="story_video_1 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
+                        <source src="./assets/Story/1/storyintro.webm" type="video/webm" />
+                        <source src="./assets/Story/1/storyintro.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="story_top_right">
-                    <video class="story_video" width="100%" preload="metadata" autoplay muted loop playsinline>
+                    <video class="story_video lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
                         <source src="./assets/Story/2/Story2.webm" type="video/webm" />
                         <source src="./assets/Story/2/Story2.mp4" type="video/mp4" />
                     </video>
@@ -292,7 +277,7 @@
             </div>
 
             <div class="story_middle">
-                <video class="story_video_3" width="100%" preload="metadata" autoplay muted loop playsinline>
+                <video class="story_video_3 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
                     <source src="./assets/Story/3/story3.webm" type="video/webm" />
                     <source src="./assets/Story/3/story3.mp4" type="video/mp4" />
                 </video>
@@ -300,7 +285,7 @@
 
             <div class="story_bot">
                 <div class="story_top_left">
-                    <video class="story_video_4" width="100%" preload="metadata" autoplay muted loop playsinline>
+                    <video class="story_video_4 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
                         <source src="./assets/Story/4/story4.webm" type="video/webm" />
                         <source src="./assets/Story/4/story4.mp4" type="video/mp4" />
                     </video>
@@ -312,7 +297,7 @@
 
                 </div>
                 <div class="story_top_right">
-                    <video class="story_video_5" width="100%" preload="metadata" autoplay muted loop playsinline>
+                    <video class="story_video_5 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
                         <source src="./assets/Story/5/Story5.webm" type="video/webm" />
                         <source src="./assets/Story/5/Story5.mp4" type="video/mp4" />
                     </video>
@@ -496,13 +481,15 @@
         <div class="footer_container">
             <div class="footer_logo">
                 <img class="footer_logo_img" src="./assets/logo.svg" alt="Logo">
+                <img class="footer_logo_img_iphone" src="./assets/logo-iphone.png" alt="Logo">
             </div>
+
             <div class="footer_info">
                 <h2 class="footer_title">
                     Dolia Cats NFT
                 </h2>
                 <p class="footer_text">All Rights Reserved <span class="footer_year">2021</span> </p>
-                <p class="footer_text">Terms and conditions</p>
+                <a class="terms_link" href="./pages/terms-and-conditions/terms.html"><p class="footer_text">Terms and conditions</p></a> 
                 <p class="footer_text">Privacy Policy</p>
                 <div class="footer_icons">
                     <a class="footer_icon" href="https://discord.com/invite/RetekYNarD"><img class="footer_icon_img"

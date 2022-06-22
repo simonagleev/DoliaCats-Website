@@ -228,6 +228,10 @@
   transition-duration: 190ms;
 }
 
+.menu-item-lvl2:nth-child(7) {
+  transition-duration: 250ms;
+}
+
 .menu-open-2 {
   position: absolute;
   top: 30px;
@@ -242,9 +246,12 @@
     transform: scale(1.1, 1.1) translate3d(0, 0, 0);
     cursor: pointer; */
   position: absolute;
-  top: 30px;
-  left: 35px;
   opacity: 0;
+  top: 5px;
+  left: 5px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
 }
 
 .menu-open-button-2:hover {
@@ -271,19 +278,26 @@
 
 .menu-open-2:checked~.menu-item-lvl2:nth-child(4) {
   transition-duration: 240ms;
-  transform: translate3d(0.18543px, 129.2491px, 0);
+  transform: translate3d(19.18543px, 130.2491px, 0);
   opacity: 1;
 }
 
 .menu-open-2:checked~.menu-item-lvl2:nth-child(5) {
   transition-duration: 320ms;
-  transform: translate3d(-28.90842px, 66.99996px, 0);
+  transform: translate3d(-37.90842px, 98.99996px, 0);
   opacity: 1;
 }
 
 .menu-open-2:checked~.menu-item-lvl2:nth-child(6) {
   transition-duration: 320ms;
-  transform: translate3d(-94.18543px, 49.2491px, 0);
+  transform: translate3d(-90.18543px, 61.2491px, 0);
+  opacity: 1;
+
+}
+
+.menu-open-2:checked~.menu-item-lvl2:nth-child(7) {
+  transition-duration: 400ms;
+  transform: translate3d(-126.18543px, 9.2491px, 0);
   opacity: 1;
 
 }

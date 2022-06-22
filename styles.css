@@ -856,7 +856,11 @@ footer {
 .footer_logo_img {
     width: 225px;
     height: 129px;
-    /* padding: 150px 0 90px 0px; */
+    /* padding: 150px 0 90px 0px; */ 
+}
+
+.footer_logo_img_iphone {
+    display: none;
 }
 
 .footer_info {
@@ -974,5 +978,13 @@ footer {
   }
   
   .loaded .preloader {
+    display: none;
+  }
+
+  .terms_link {
+    text-decoration: none;
+  }
+
+  .logo_iphone {
     display: none;
   }
