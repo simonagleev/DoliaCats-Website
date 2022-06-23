@@ -92,6 +92,10 @@ window.onscroll = function () {
     if (prevScrollpos > currentScrollPos) {
         wholeNavigation.style.top = "0";
         homeArrow.style.top = "20px"
+
+         if (currentScrollPos < 600) {
+            homeArrow.style.top = "-500px"
+        }
     } else {
         if (currentScrollPos > 600) {
             wholeNavigation.style.top = "-500px";
