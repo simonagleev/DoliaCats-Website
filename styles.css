@@ -40,6 +40,10 @@ body {
     display: none;
 }
 
+.home_arrow {
+    display: none;
+}
+
 .navigation {
     position: fixed;
     top: 0;
@@ -69,6 +73,7 @@ body {
     position: relative;
     transition: 1s;
 }
+
 
 .navigation:last-child {
     padding-right: 66px;

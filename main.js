@@ -36,6 +36,8 @@ for (let el of meowverseVideos) {
 const wholeNavigation = document.querySelector('.menu')
 const bg = document.getElementById('menu-background');
 
+const homeArrow = document.querySelector('.home_arrow_container')
+
 const menu = document.querySelector('.menu-open')
 const label = document.querySelector('.menu-open-button')
 const checkbox = document.getElementById('menu-open')
@@ -83,14 +85,17 @@ menuItems2.forEach(function (item) {
 
 
 //Hiding menu while scrolling
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         wholeNavigation.style.top = "0";
+        homeArrow.style.top = "20px"
     } else {
         if (currentScrollPos > 600) {
             wholeNavigation.style.top = "-500px";
+            homeArrow.style.top = "-500px"
         }
 
     }
