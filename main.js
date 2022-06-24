@@ -109,9 +109,42 @@ window.onscroll = function () {
 // Preloader 
 
 window.onload = function () {
+    console.log('first')
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
+        console.log('settimeout')
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 500);
 }
+
+
+
+// LAZY LOADING VIDEO
+
+document.addEventListener("DOMContentLoaded", function () {
+    let lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+    if ("IntersectionObserver" in window) {
+        let lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (video) {
+                if (video.isIntersecting) {
+                    for (let source in video.target.children) {
+                        let videoSource = video.target.children[source];
+                        if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                            videoSource.src = videoSource.dataset.src;
+                        }
+                    }
+
+                    video.target.load();
+                    video.target.classList.remove("lazy");
+                    lazyVideoObserver.unobserve(video.target);
+                }
+            });
+        });
+
+        lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+        });
+    }
+});

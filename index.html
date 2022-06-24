@@ -29,10 +29,12 @@
     <link rel="stylesheet" href="./stylesMobile.css" media="screen and (max-width: 480px)">
     <link rel="stylesheet" href="./stylesTablets.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
 
+    <link rel="preload" as="style" href="./styles.css">
 </head>
 
 <body>
     <div class="preloader">
+        <img class="preloader_img" src="./assets/cat_head_logo.svg" alt="cat" width="300px" height="300px">
         <div class="preloader__row">
             <div class="preloader__item"></div>
             <div class="preloader__item"></div>
@@ -141,8 +143,8 @@
         <section class="top_block">
             <section class="cats_video_container">
                 <video class="cats_video lazy" width="100%" preload="metadata" poster="./assets/metaImage.png" autoplay muted loop playsinline>
-                    <source src="./assets/1st_block/1.webm" type="video/webm" />
-                    <source src="./assets/1st_block/1st_block.mp4" type="video/mp4" />
+                    <source data-src=""="./assets/1st_block/1.webm" type="video/webm" />
+                    <source data-src="./assets/1st_block/1st_block.mp4" type="video/mp4" />
                 </video>
                 <img class="bubbles_bg" width="100%" src="./assets/BubblesBG.svg" alt="bg">
 
@@ -215,9 +217,9 @@
                 Here, you can let your imagination run wild, anything is possible.
             </p>
             <div class="meowverse_video_container">
-                <video class="meowverse_video lazy" width="80%" preload="metadata" autoplay muted loop playsinline>
-                    <source src="./assets/Meowverse/meowverse.webm" type="video/webm" />
-                    <source src="./assets/Meowverse/meowverse.mp4" type="video/mp4" />
+                <video class="meowverse_video lazy" width="80%" preload="metadata" poster="./assets/Meowverse/meowverse-poster.webp" autoplay muted loop playsinline>
+                    <source data-src="./assets/Meowverse/meowverse.webm" type="video/webm" />
+                    <source data-src="./assets/Meowverse/meowverse.mp4" type="video/mp4" />
                 </video>
             </div>
             <p class="content_text">
@@ -264,31 +266,31 @@
                         culture, and there’s no sign of this slowing down. So, now we know that the whole world loves
                         cats, it’s time to introduce you to the Dolia Cats!
                     </p>
-                    <video class="story_video_1 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/1/storyintro.webm" type="video/webm" />
-                        <source src="./assets/Story/1/storyintro.mp4" type="video/mp4" />
+                    <video class="story_video_1 lazy" width="100%" preload="metadata" poster="./assets/Story/1/storyintro1-poster.webp" autoplay muted loop playsinline>
+                        <source data-src="./assets/Story/1/storyintro.webm" type="video/webm" />
+                        <source data-src="./assets/Story/1/storyintro.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="story_top_right">
-                    <video class="story_video lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/2/Story2.webm" type="video/webm" />
-                        <source src="./assets/Story/2/Story2.mp4" type="video/mp4" />
+                    <video class="story_video lazy" width="100%" preload="metadata" poster="./assets/Story/2/Story2-poster.webp" autoplay muted loop playsinline>
+                        <source data-src="./assets/Story/2/Story2.webm" type="video/webm" />
+                        <source data-src="./assets/Story/2/Story2.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
 
             <div class="story_middle">
-                <video class="story_video_3 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
-                    <source src="./assets/Story/3/story3.webm" type="video/webm" />
-                    <source src="./assets/Story/3/story3.mp4" type="video/mp4" />
+                <video class="story_video_3 lazy" width="100%" preload="metadata" poster="./assets/Story/3/Story3-poster.webp" autoplay muted loop playsinline>
+                    <source data-src="./assets/Story/3/story3.webm" type="video/webm" />
+                    <source data-src="./assets/Story/3/story3.mp4" type="video/mp4" />
                 </video>
             </div>
 
             <div class="story_bot">
                 <div class="story_top_left">
-                    <video class="story_video_4 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/4/story4.webm" type="video/webm" />
-                        <source src="./assets/Story/4/story4.mp4" type="video/mp4" />
+                    <video class="story_video_4 lazy" width="100%" preload="metadata" poster="./assets/Story/4/Story4-poster.webp" autoplay muted loop playsinline>
+                        <source data-src="./assets/Story/4/story4.webm" type="video/webm" />
+                        <source data-src="./assets/Story/4/story4.mp4" type="video/mp4" />
                     </video>
                     <p class="story_text">
                         These kitties are still new to the ways of Earth, so help them reclaim their clothes and toys.
@@ -298,9 +300,9 @@
 
                 </div>
                 <div class="story_top_right">
-                    <video class="story_video_5 lazy" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/5/Story5.webm" type="video/webm" />
-                        <source src="./assets/Story/5/Story5.mp4" type="video/mp4" />
+                    <video class="story_video_5 lazy" width="100%" preload="metadata" poster="./assets/Story/5/Story5-poster.webp" autoplay muted loop playsinline>
+                        <source data-src="./assets/Story/5/Story5.webm" type="video/webm" />
+                        <source data-src="./assets/Story/5/Story5.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <p class="story_text_mobile">
