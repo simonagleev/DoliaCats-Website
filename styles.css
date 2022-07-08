@@ -50,6 +50,9 @@ body {
 .home_arrow {
     display: none;
 }
+.home_arrow_text {
+    display: none
+}
 
 .navigation {
     position: fixed;
