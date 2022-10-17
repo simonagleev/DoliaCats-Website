@@ -1,532 +1,1085 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta itemprop="image" content="./assets/metaImage.webp">
+    <meta itemprop="name" content="Dolia Cats" />
+    <meta itemprop="description" content="Dolia cats NFT collectin and metaverse" />
+    <meta itemprop="image" content="./assets/metaImage.webp">
+
+    <meta name="description" content="Multi-chain Project">
+    <meta name="keywords" content="NFT, Multichain, Metaverse, Cats">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Multi-chain Project">
+    <meta property="og:description" content="Cats. NFT. Metaverse.">
+    <meta property="og:url" content="https://doliacats.com/">
+    <meta property="og:image" content="./assets/metaImage.webp">
+    <meta property="og:site_name" content="Dolia Cats">
+    <meta property="og:locale" content="en_EN">
+    
+
+    <meta name="description" content="Multi-chain Project">
+
+    <meta name="keywords" content="NFT, Multichain, Metaverse, Cats">
+
+
     <title>Dolia Cats</title>
 
+
+
+    <link rel="shortcut icon" href="./assets/Artboard 1.png" type="image/x-icon">
+
+
+
     <link rel="stylesheet" href="./styles.css" media="screen and (min-width: 1025px)">
+
     <link rel="stylesheet" href="./stylesBurgerMenu.css" media="screen and (max-width: 480px)">
+
     <link rel="stylesheet" href="./stylesBurgerMenu.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
+
     <link rel="stylesheet" href="./stylesMobile.css" media="screen and (max-width: 480px)">
-    <link rel="stylesheet" href="./stylesNormalMenu.css" media="screen and (max-width: 480px)">
+
     <link rel="stylesheet" href="./stylesTablets.css" media="screen and (min-width: 481px) and (max-width: 1024px)">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" as="style" href="./styles.css">
 
 </head>
 
+
+
 <body>
+
+    <div class="preloader">
+
+        <img class="preloader_img" src="./assets/cat_head_logo.svg" alt="cat" width="300px" height="300px">
+
+        <div class="preloader__row">
+
+            <div class="preloader__item"></div>
+
+            <div class="preloader__item"></div>
+
+        </div>
+
+    </div>
+
     <header>
+
         <nav class="navigation">
+
+            <div class="nav_item swing"><a class="nav_link" href="#home">Home</a></div>
+
             <div class="nav_item swing"><a class="nav_link" href="#intro">About</a></div>
+
             <div class="nav_item swing"><a class="nav_link" href="#meowverse">Meowverse</a></div>
+
             <div class="nav_item swing"><a class="nav_link" href="#philosophy">Philosophy</a></div>
+
             <div class="nav_item swing"><a class="nav_link" href="#roadmap">Roadmap</a></div>
-            <div class="nav_item swing"><a class="nav_link" href="#">FAQs</a></div>
+
+            <div class="nav_item swing"><a class="nav_link" href="./pages/faq/faq.html">FAQs</a></div>
+
             <div class="nav_item swing">
+
                 <a class="nav_link" href="#">More</a>
+
                 <div class="dropdown-content">
-                    <a href="#">Meowrush</a>
-                    <a href="#">Trophies</a>
-                    <a href="#">Art</a>
+
+                    <a href="https://meowrush.com">Meowrush</a>
+
+                    <a href="https://opensea.io/collection/doliacatstrophies">Trophies</a>
+
+                    <a href="http://art.doliacats.com">Art</a>
+
                 </div>
+
             </div>
+
+
 
         </nav>
 
-        <!-- 
-        <nav class="navigation_mobile">
 
-            <input class="menu__toggle" id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <div class="menu__box">
-                <div><a class="menu__item" href="#intro">About</a></div>
-                <div><a class="menu__item" href="#">Meowverse</a></div>
-                <div><a class="menu__item" href="#">Philosophy</a></div>
-                <div><a class="menu__item" href="#roadmap">Roadmap</a></div>
-                <div><a class="menu__item" href="#">FAQs</a></div>
-                <div class="menu__item">
-                    <a class="nav_link" href="#">More</a>
-                    <div class="dropdown-content">
-                        <a href="#">Meowrush</a>
-                        <a href="#">Trophies</a>
-                        <a href="#">Art</a>
-                    </div>
-                </div>
-            </div> 
 
-        
-             <div id="menu">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                </ul>
-            </div> 
-         </nav> -->
         <div id="menu-background" class="le">
+
+            <a class="home_arrow_link" href="#home">
+
+                <div class="home_arrow_container">
+
+                    <p class="home_arrow">▲</p>
+
+                    <p class="home_arrow_text">home</p>
+
+                </div>
+
+            </a>
+
             <nav class="menu">
+
                 <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+
                 <label class="menu-open-button" for="menu-open">
+
                     <span class="hamburger hamburger-1"></span>
+
                     <span class="hamburger hamburger-2"></span>
+
                     <span class="hamburger hamburger-3"></span>
+
                 </label>
 
+
+
                 <a href="#intro" class="menu-item">
+
                     <p class="goo_menu_text">About</p>
+
                 </a>
+
                 <a href="#meowverse" class="menu-item">
+
                     <p class="goo_menu_text">Meowverse</p>
+
                 </a>
+
                 <div href="#more" class="menu-item-more" id="more">
+
                     <p class="goo_menu_text">More ▼</p>
+
                     <input type="checkbox" href="#" class="menu-open-2" name="menu-open-2" id="menu-open-2" />
+
                     <label class="menu-open-button-2" for="menu-open-2">
 
+
+
                     </label>
-                    <a href="#" class="menu-item-lvl2">
+
+                    <a href="https://meowrush.com" class="menu-item-lvl2">
+
                         <p class="goo_menu_text">Meowrush</p>
+
                     </a>
-                    <a href="#" class="menu-item-lvl2">
+
+                    <a href="http://art.doliacats.com" class="menu-item-lvl2">
+
                         <p class="goo_menu_text">Art</p>
+
                     </a>
-                    <a href="#" class="menu-item-lvl2">
+
+                    <a href="https://opensea.io/collection/doliacatstrophies" class="menu-item-lvl2">
+
                         <p class="goo_menu_text">Trophies</p>
+
                     </a>
+
+                    <a href="./pages/faq/faq.html" class="menu-item-lvl2">
+
+                        <p class="goo_menu_text">FAQs</p>
+
+                    </a>
+
                 </div>
+
                 <a href="#roadmap" class="menu-item">
+
                     <p class="goo_menu_text">Roadmap</p>
-                </a>
-                <a href="#philosophy" class="menu-item">
-                    <p class="goo_menu_text">Philosophy</p>
+
                 </a>
 
+                <a href="#philosophy" class="menu-item">
+
+                    <p class="goo_menu_text">Philosophy</p>
+
+                </a>
+
+
+
             </nav>
+
         </div>
+
+
+
+
 
 
 
         <!-- filters -->
+
         <div style="display: none">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%">
+
                 <defs>
+
                     <filter id="shadowed-goo">
 
+
+
                         <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+
                         <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+
                             result="goo" />
+
                         <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+
                         <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+
                             result="shadow" />
+
                         <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+
                         <feBlend in2="shadow" in="goo" result="goo" />
+
                         <feBlend in2="goo" in="SourceGraphic" result="mix" />
+
                     </filter>
+
                     <filter id="goo">
+
                         <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+
                         <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+
                             result="goo" />
+
                         <feBlend in2="goo" in="SourceGraphic" result="mix" />
+
                     </filter>
+
                 </defs>
+
             </svg>
+
         </div>
 
+
+
     </header>
+
     <main>
+
+        <a name="home"></a>
+
         <section class="top_block">
+
             <section class="cats_video_container">
-                <video class="cats_video" width="100%" preload="metadata" autoplay muted loop playsinline>
-                    <source src="./assets/1st_block/1.webm" type="video/webm" />
-                    <source src="./assets/1st_block/1st_block.mp4" type="video/mp4" />
+
+                <video class="cats_video lazy" width="100%" preload="metadata" poster="./assets/metaImage.webp" autoplay muted loop playsinline>
+
+                    <source data-src=""="./assets/1st_block/1.webm" type="video/webm" />
+
+                    <source data-src="./assets/1st_block/1st_block.mp4" type="video/mp4" />
+
                 </video>
+
                 <img class="bubbles_bg" width="100%" src="./assets/BubblesBG.svg" alt="bg">
 
+
+
                 <div class="logo_container">
+
                     <div class="logo">
+
                         <img src="./assets/logo.svg" width="100%" alt="DoliaCats">
+
                     </div>
+
+                    <div class="logo_iphone">
+
+                        <img src="./assets/logo-iphone.png" width="100%" alt="DoliaCats">
+
+                    </div>
+
                     <div class="btn_join">
+
                         <a class="join_wl_link" href="https://discord.com/invite/RetekYNarD">
 
+
+
                             <div class="btn_ellipse_1 btn_bubbles"></div>
+
                             <div class="btn_ellipse_2"></div>
+
                             <div class="btn_ellipse_3"></div>
+
                             <div class="btn_ellipse_4"></div>
+
                             <div class="btn_ellipse_5"></div>
+
                             <div class="btn_ellipse_6"></div>
-                            <p class="btn_text">JOIN WL</p>
-                            <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Join WL">
+
+                            <p class="btn_text">Become a cat</p>
+
+                            <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Become a cat">
+
+
 
                         </a>
+
                     </div>
+
                 </div>
+
             </section>
+
+
 
             <section class="intro_container">
+
                 <a name="intro"></a>
+
                 <section class="intro">
+
                     <div class="intro_text_container">
+
+		        <p class="intro_text">
+
+                            Before the original collection launch it's going to be <a class="additional_link" href="http://genesis.doliacats.com">genesis collection</a> with 666 NFTs supply with a special access features for holders (More info on our <a class="additional_link" href="https://discord.com/invite/RetekYNarD"> Discord </a> server)
+                        
+			</p>
+
+
+
                         <p class="intro_text">
-                            Dolia Cats is a limited collection of 9,999 gorgeous programmatically generated cat-themed
+
+                            Dolia Cats original collection is a limited collection of 9,999 gorgeous programmatically generated cat-themed
+
                             NFTs
+
                             on
+
                             the Ethereum blockchain.
+
                         </p>
+
                         <p class="intro_text">
+
                             Made from a variety of different objects, heads, necks and face accessories, body colours,
+
                             backgrounds,
+
                             eyes, and expressions, each Dolia Cat NFT is completely unique.
+
                         </p>
+
                         <p class="intro_text">
+
                             Owning a Dolia Cat NFT will give you exclusive power in the Meowverse, the only metaverse
+
                             for
+
                             NFT
+
                             cats,
+
                             and the most tightly knit community out there!
+
                         </p>
+
                     </div>
+
                     <div class="gif_container">
 
+
+
                         <div class="cat_cards_container">
+
                             <img class="cat_cards" src="./assets/cards.gif" alt="cat catds">
+
                         </div>
+
                     </div>
+
                 </section>
+
             </section>
 
+
+
         </section>
+
+
+
 
 
         <section class="meowerse_section content_container">
+
             <a name="meowverse"></a>
-            <h1 class="title">
+
+            <h1 class="title title_big">
+
                 Meowverse
+
             </h1>
+
             <p class="content_text">
+
                 The Meowverse is the metaverse with its own tokenomilks, built exclusively for cool cats and kittens.
+
                 Here, you can let your imagination run wild, anything is possible.
-            </p>
-            <div class="meowverse_video_container">
-                <video class="meowverse_video" width="80%" preload="metadata" autoplay muted loop playsinline>
-                    <source src="./assets/Meowverse/meowverse.webm" type="video/webm" />
-                    <source src="./assets/Meowverse/meowverse.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <p class="content_text">
-                You see, when you own a Dolia Cat NFT, you’re given a seat on the Meowverse board of directors, giving
-                you a say and vote on what happens next in the play2earn MeoWorld. You’ll also get a free 3D cat avatar
-                to explore the Meowverse
-                – how cool is that!
-            </p>
-            <p class="content_text">
-                In the Meowverse, you’ll be able to enjoy play2earn games alone, or with friends, buy, sell and trade
-                Dolia Cat NFTs, collect cool upgrades, and buy up plots of land to store all your precious kitties. You
-                get to influence your Meowverse experience through the in-game actions you take.
+
             </p>
 
-        </section>
-        <section class="tokenimilks content_container">
-            <div class="tokenimilks_left">
-                <h1 class="title">
-                    Tokenimilks
-                </h1>
-                <p class="content_text tokenimilks_left_text">
-                    Your Dolia Cat NFTs grant you an exclusive early access to the Meowverse, a place governed by its
-                    own
-                    tokenomics. The more games you play, the more MEELK tokens you will get and that in return will let
-                    you
-                    upgrade your NFT kitties and increase the value of your NFT art.
-                </p>
+            <div class="meowverse_video_container">
+
+                <video class="meowverse_video lazy" width="80%" preload="metadata" poster="./assets/Meowverse/meowverse-poster.webp" autoplay muted loop playsinline>
+
+                    <source data-src="./assets/Meowverse/meowverse.webm" type="video/webm" />
+
+                    <source data-src="./assets/Meowverse/meowverse.mp4" type="video/mp4" />
+
+                </video>
+
             </div>
+
+            <p class="content_text">
+
+                You see, when you own a Dolia Cat NFT, you’re given a seat on the Meowverse board of directors, giving
+
+                you a say and vote on what happens next in the play2earn MeoWorld. You’ll also get a free 3D cat avatar
+
+                to explore the Meowverse
+
+                – how cool is that!
+
+            </p>
+
+            <p class="content_text">
+
+                In the Meowverse, you’ll be able to enjoy play2earn games alone, or with friends, buy, sell and trade
+
+                Dolia Cat NFTs, collect cool upgrades, and buy up plots of land to store all your precious kitties. You
+
+                get to influence your Meowverse experience through the in-game actions you take.
+
+            </p>
+
+
+
+        </section>
+
+        <section class="tokenimilks content_container">
+
+            <div class="tokenimilks_left">
+
+                <h1 class="title">
+
+                    Tokenomilks
+
+                </h1>
+
+                <p class="content_text tokenimilks_left_text">
+
+                    Your Dolia Cat NFTs grant you an exclusive early access to the Meowverse, a place governed by its
+
+                    own
+
+                    tokenomics. The more games you play, the more MEELK tokens you will get and that in return will let
+
+                    you
+
+                    upgrade your NFT kitties and increase the value of your NFT art.
+
+                </p>
+
+            </div>
+
+
 
             <div class="milk_img">
-                <img class="milk_box" width="120%" src="./assets/milk.png" alt="MILK">
+
+                <img class="milk_box" width="120%" src="./assets/milk.webp" alt="MILK">
+
             </div>
+
         </section>
+
+
 
         <section class="story content_container">
+
             <h1 class="title story_title">
+
                 Who are Dolia Cats?
+
             </h1>
+
             <div class="story_top">
+
                 <div class="story_top_left">
+
                     <p class="story_text">
+
                         Ancient civilizations treated cats like they were gods, and many feared them for the same
+
                         reason. In recent times, cats have become more than just pets. Cats are now part of the meme
+
                         culture, and there’s no sign of this slowing down. So, now we know that the whole world loves
+
                         cats, it’s time to introduce you to the Dolia Cats!
+
                     </p>
-                    <video class="story_video_1" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/1/story1.webm" type="video/webm" />
-                        <source src="./assets/Story/1/story1.mp4" type="video/mp4" />
+
+                    <video class="story_video_1 lazy" width="100%" preload="metadata" poster="./assets/Story/1/storyintro1-poster.webp" autoplay muted loop playsinline>
+
+                        <source data-src="./assets/Story/1/storyintro.webm" type="video/webm" />
+
+                        <source data-src="./assets/Story/1/storyintro.mp4" type="video/mp4" />
+
                     </video>
+
                 </div>
+
                 <div class="story_top_right">
-                    <video class="story_video" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/2/Story2.webm" type="video/webm" />
-                        <source src="./assets/Story/2/Story2.mp4" type="video/mp4" />
+
+                    <video class="story_video lazy" width="100%" preload="metadata" poster="./assets/Story/2/Story2-poster.webp" autoplay muted loop playsinline>
+
+                        <source data-src="./assets/Story/2/Story2.webm" type="video/webm" />
+
+                        <source data-src="./assets/Story/2/Story2.mp4" type="video/mp4" />
+
                     </video>
+
                 </div>
+
             </div>
+
+
 
             <div class="story_middle">
-                <video class="story_video_3" width="100%" preload="metadata" autoplay muted loop playsinline>
-                    <source src="./assets/Story/3/story3.webm" type="video/webm" />
-                    <source src="./assets/Story/3/story3.mp4" type="video/mp4" />
+
+                <video class="story_video_3 lazy" width="100%" preload="metadata" poster="./assets/Story/3/Story3-poster.webp" autoplay muted loop playsinline>
+
+                    <source data-src="./assets/Story/3/story3.webm" type="video/webm" />
+
+                    <source data-src="./assets/Story/3/story3.mp4" type="video/mp4" />
+
                 </video>
+
             </div>
+
+
 
             <div class="story_bot">
+
                 <div class="story_top_left">
-                    <video class="story_video_4" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/4/story4.webm" type="video/webm" />
-                        <source src="./assets/Story/4/story4.mp4" type="video/mp4" />
+
+                    <video class="story_video_4 lazy" width="100%" preload="metadata" poster="./assets/Story/4/Story4-poster.webp" autoplay muted loop playsinline>
+
+                        <source data-src="./assets/Story/4/story4.webm" type="video/webm" />
+
+                        <source data-src="./assets/Story/4/story4.mp4" type="video/mp4" />
+
                     </video>
+
                     <p class="story_text">
+
                         These kitties are still new to the ways of Earth, so help them reclaim their clothes and toys.
+
                         Settle them into their new home and pet them until they purr. These aren’t just any old cats.
+
                         They’re Dolia Cats!
+
                     </p>
 
+
+
                 </div>
+
                 <div class="story_top_right">
-                    <video class="story_video_5" width="100%" preload="metadata" autoplay muted loop playsinline>
-                        <source src="./assets/Story/5/Story5.webm" type="video/webm" />
-                        <source src="./assets/Story/5/Story5.mp4" type="video/mp4" />
+
+                    <video class="story_video_5 lazy" width="100%" preload="metadata" poster="./assets/Story/5/Story5-poster.webp" autoplay muted loop playsinline>
+
+                        <source data-src="./assets/Story/5/Story5.webm" type="video/webm" />
+
+                        <source data-src="./assets/Story/5/Story5.mp4" type="video/mp4" />
+
                     </video>
+
                 </div>
+
                 <p class="story_text_mobile">
+
                     These kitties are still new to the ways of Earth, so help them reclaim their clothes and toys.
+
                     Settle them into their new home and pet them until they purr. These aren’t just any old cats.
+
                     They’re Dolia Cats!
+
                 </p>
+
             </div>
+
         </section>
+
+
 
         <div class="join_section content_container">
+
             <p class="content_text join_text">
+
                 Be one of the first to adopt a Dolia Cat NFT and get access to the Meowverse, packed with fluffy
+
                 play2earn games and the best family like community the cat world has ever known!
+
             </p>
+
             <a class="join_wl_link" href="https://discord.com/invite/RetekYNarD">
+
                 <div class="btn_join">
+
                     <div class="btn_ellipse_1 btn_bubbles"></div>
+
                     <div class="btn_ellipse_2"></div>
+
                     <div class="btn_ellipse_3"></div>
+
                     <div class="btn_ellipse_4"></div>
+
                     <div class="btn_ellipse_5"></div>
+
                     <div class="btn_ellipse_6"></div>
-                    <p class="btn_text">JOIN WL</p>
-                    <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Join WL">
+
+                    <p class="btn_text">Become a cat</p>
+
+                    <img class="btn_img" src="./assets/btnBackground.svg" width="100%" alt="Become a cat">
+
                 </div>
+
             </a>
+
         </div>
+
+
 
         <section class="philosophy content_container">
+
             <a name="philosophy"></a>
+
             <h1 class="title philosophy_title">
+
                 Our philosophy
+
             </h1>
+
             <div class="philosophy_list">
+
                 <div class="philosophy_list_item">
+
                     <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+
                             alt="paw print"></div>
+
                     <p class="list_text"> We live an easy life, nothing matters except family and the community</p>
+
                 </div>
+
                 <div class="philosophy_list_item">
+
                     <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+
                             alt="paw print"></div>
+
                     <p class="list_text">Food and MEELK is our everything</p>
+
                 </div>
+
                 <div class="philosophy_list_item">
+
                     <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+
                             alt="paw print"></div>
+
                     <p class="list_text">Our main job is to play and earn because our whole life is a game</p>
+
                 </div>
+
                 <div class="philosophy_list_item">
+
                     <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+
                             alt="paw print"></div>
+
                     <p class="list_text">We only do what brings us joy and pleasure</p>
+
                 </div>
+
                 <div class="philosophy_list_item">
+
                     <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+
                             alt="paw print"></div>
+
                     <p class="list_text">No negativity. Only quick fights</p>
+
                 </div>
+
                 <div class="philosophy_list_item">
+
                     <div class="philosophy_icon"><img class="philosophy_icon_img" src="./assets/pawprint.fill.svg"
+
                             alt="paw print"></div>
+
                     <p class="list_text">Everyone loves you, and each trait of yours is there for a reason! You can
+
                         stroke, but keep your distance!</p>
+
                 </div>
+
             </div>
+
         </section>
+
+
 
         <section class="traits content_container">
+
             <h1 class="title traits_title">
+
                 Traits
+
             </h1>
+
             <div class="traits_content">
+
                 <div class="traits_img_container">
-                    <img class="traits_img" src="./assets/cats.png" alt="Cats">
+
+                    <img class="traits_img" src="./assets/cats.webp" alt="Cats">
+
                 </div>
+
                 <p class="traits_text">
+
                     Dolia Cats are programmatically generated from 150+ different details and objects, handcrafted with
+
                     love
+
                     <img src="./assets/heart.fill.svg" alt="heart">
+
                 </p>
 
+
+
             </div>
+
         </section>
+
+
 
         <section class="roadmap ">
+
             <a name="roadmap"></a>
+
             <section class="content_container">
+
                 <h1 class="title roadmap_title">
+
                     Roadmap
+
                 </h1>
+
                 <div class="roadmap_list">
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Green.svg"
+
                                 alt="pawprint"></div>
+
                         <p class="list_text">Development stage and handcrafting of Dolia Cats traits</p>
+
                     </div>
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Green.svg"
+
                                 alt="pawprint"></div>
+
                         <p class="list_text">Marketing initiative launch</p>
+
                     </div>
+
                     <div class="roadmap_list_item">
-                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Green.svg"
+
                                 alt="pawprint"></div>
-                        <p class="list_text">Public release</p>
+
+                        <p class="list_text">Dolia Cats <a class="additional_link" href="http://genesis.doliacats.com">Genesis collection</a> launch (666 supply)</p>
+
                     </div>
-                    <div class="roadmap_list_item">
+
+		    <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
                                 alt="pawprint"></div>
+
+                        <p class="list_text"> Dolia Cats Original collection launch (9999 supply)</p>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="roadmap_list_item">
+
+                        <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
+                                alt="pawprint"></div>
+
                         <p class="list_text">Sales launch: The first 1000 adopted NFT kitties will receive
+
                             a FREE 3D Dolia Cats model NFT</p>
+
                     </div>
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
                                 alt="pawprint"></div>
+
                         <p class="list_text">Mega money giveaway for discord community and launch of an exclusive Dolia
+
                             Cats
+
                             Merch.
+
                             Hats, hoodies and t-shirts so you could take Dolia Cats to the real world!</p>
+
                     </div>
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
                                 alt="pawprint"></div>
+
                         <p class="list_text">DAO among the holders. We are going to make your ideas real in the
+
                             Meowverse!
+
                         </p>
+
                     </div>
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
                                 alt="pawprint"></div>
+
                         <p class="list_text">Creating and launch an Animated series about Dolia Cats</p>
+
                     </div>
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
                                 alt="pawprint"></div>
+
                         <p class="list_text">Meowverse Beta</p>
+
                     </div>
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
                                 alt="pawprint"></div>
                         <p class="list_text">Integration of Tokenomilks</p>
+
                     </div>
+
                     <div class="roadmap_list_item">
+
                         <div class="roadmap_icon"><img class="rodamap_icon_img" src="./assets/pawprint-Aqua.svg"
+
                                 alt="pawprint"></div>
+
                         <p class="list_text">Play To Earn Meoverse NFT Metaverse launch</p>
+
                     </div>
+
                 </div>
+
             </section>
+
             <img class="ellipse_right_half" src="./assets/Ellipse-right-big.svg" alt="ellipse">
+
             <img class="ellipse_left_half" src="./assets/Ellipse-lef-big.svg" alt="ellipse">
+
             <div class="small_ellipse_1"> </div>
+
             <div class="small_ellipse_2"> </div>
+
         </section>
+
+
 
         <section class="why">
+
             <img class="why_bg" src="./assets/why-bubbles.png" alt="gachground bubbles">
+
             <div class="content_container why_container">
+
                 <h1 class="title why_title">
+
                     WHy dolia cats?
+
                 </h1>
+
                 <p class="why_text">Dolia Cats are here to brighten up your day and love you unconditionally.
+
                     So, here are a few reasons why you should join the Dolia Cats family and become part of the clowder.
+
                 </p>
+
                 <p class="why_text">- Exclusive events and performances for community members.</p>
+
                 <p class="why_text">- A Dolia Cat NFT is your ticket to the epic Meowverse metaverse!</p>
+
                 <p class="why_text">- Owning a Dolia Cat NFT gives you the ability to become part of the governance
+
                     process.</p>
+
                 <p class="why_text">- A portion of royalties will be donated to various cat-focused charities.</p>
+
                 <p class="why_text">- Max supply of 9,999 Dolia Cat NFTs.</p>
+
                 <p class="why_text">- Regular giveaways and competitions.</p>
+
             </div>
+
         </section>
+
     </main>
 
+
+
     <footer>
+
         <div class="footer_container">
+
             <div class="footer_logo">
+
                 <img class="footer_logo_img" src="./assets/logo.svg" alt="Logo">
-            </div>
-            <div class="footer_info">
-                <h2 class="footer_title">
-                    Dolia Cats NFT
-                </h2>
-                <p class="footer_text">All Rights Reserved <span class="footer_year">2021</span> </p>
-                <p class="footer_text">Terms and conditions</p>
-                <p class="footer_text">Privacy Policy</p>
-                <div class="footer_icons">
-                    <a class="footer_icon" href="https://discord.com/invite/RetekYNarD"><img class="footer_icon_img"
-                            src="./assets/discord-white.svg" alt="discord"></a>
-                    <a class="footer_icon" href="https://twitter.com/DoliaCats?t=nmKAxmNfOQnLpkP7uTI2Xg&s=09"><img
-                            class="footer_icon_img" src="./assets/twitter-white.svg" alt="twitter"></a>
-                    <a class="footer_icon" href="https://instagram.com/doliacats?utm_medium=copy_link"><img
-                            class="footer_icon_img" src="./assets/instagram-white.svg" alt="instagram"></a>
-                </div>
-            </div>
-            <div class="footer_empty">
+
+                <img class="footer_logo_img_iphone" src="./assets/logo-iphone.png" alt="Logo">
 
             </div>
+
+
+
+            <div class="footer_info">
+
+                <h2 class="footer_title">
+
+                    Dolia Cats NFT
+
+                </h2>
+
+                <p class="footer_text">All Rights Reserved <span class="footer_year">2021</span> </p>
+
+                <a class="terms_link" href="./pages/terms-and-conditions/terms.html"><p class="footer_text">Terms and conditions</p></a> 
+
+                <p class="footer_text">Privacy Policy</p>
+
+                <div class="footer_icons">
+
+                    <a class="footer_icon" href="https://discord.com/invite/RetekYNarD"><img class="footer_icon_img"
+
+                            src="./assets/discord-white.svg" alt="discord"></a>
+
+                    <a class="footer_icon" href="https://twitter.com/DoliaCats_eth"><img
+
+                            class="footer_icon_img" src="./assets/twitter-white.svg" alt="twitter"></a>
+
+                    <a class="footer_icon" href="https://opensea.io/collection/doliacatsgenesis"><img style="height: 53px"
+
+                            class="footer_icon_img" src="./assets/openseawhite.svg" alt="opensea"></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_empty">
+
+
+
+            </div>
+
         </div>
+
+
 
     </footer>
 
+
+
     <div class="social_btns_group">
+
         <div>
+
             <a href="https://discord.com/invite/RetekYNarD">
+
                 <img class="social_icon" src="./assets/discord.svg" alt="Discord">
+
             </a>
-        </div>
-        <div>
-            <a href="https://twitter.com/DoliaCats?t=nmKAxmNfOQnLpkP7uTI2Xg&s=09">
-                <img class="social_icon" src="./assets/twitter.svg" alt="Twitter">
-            </a>
+
         </div>
 
         <div>
-            <a href="https://instagram.com/doliacats?utm_medium=copy_link">
-                <img style="height: 50px !important; width: 50px !important; padding: 0px !important"
-                    class="social_icon" src="./assets/instagram.svg" alt="instagram">
+
+            <a href="https://twitter.com/DoliaCats_eth">
+
+                <img class="social_icon" src="./assets/twitter.svg" alt="Twitter">
+
             </a>
+
         </div>
+
+
+
+        <div>
+
+            <a href="https://opensea.io/collection/doliacatsgenesis">
+
+                <img
+
+                    class="social_icon" src="./assets/opensea.svg" alt="opensea">
+
+            </a>
+
+        </div>
+
     </div>
+
     <script src="./main.js"></script>
+
 </body>
+
+
 
 </html>
