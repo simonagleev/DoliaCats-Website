@@ -890,5 +890,6 @@ footer {
   
   .loaded .preloader {
     display: none;
+    margin-bottom: 25px;
   }
 
